@@ -20,4 +20,4 @@ jobs:
 
     steps:
     - name: Greetings
-      run: echo "Hello, world! Welcome"
+      run: echo "Hello, world! Welcome" >> ${{ github.event.inputs.ritm }}
