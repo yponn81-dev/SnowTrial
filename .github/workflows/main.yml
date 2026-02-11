@@ -6,6 +6,10 @@ on:
     
   workflow_dispatch:
     inputs:
+      requested_for: 
+        required: true
+      ritm: 
+        required: true
       reason:
         description: 'Reason for manual trigger'
         required: false
