@@ -21,3 +21,5 @@ jobs:
     steps:
     - name: Greetings
       run: echo "Hello, world! Welcome" >> ${{ github.event.inputs.ritm }}
+    outputs:
+      output1: echo "Executed"
