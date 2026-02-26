@@ -13,10 +13,9 @@ on:
 
 jobs:
   demo:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
-    - name: runScpt
-      run: | 
-          Powershell -ExecutionPolicy Bypass -File ./github/Test/tstScript.ps1
+      - name: Greetings
+      run: echo "Hello, world! Welcome" >> ${{ github.event.inputs.ritm }} >> " Requested for " >> ${{ github.event.inputs.requested_for }}
       
